@@ -1,282 +1,615 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CS0F3FZ1S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  gtag('config', 'G-0CS0F3FZ1S');
-</script>
+    <title>Jinxin Wang's Homepage</title>
 
-<title>Jinxin Wang's Homepage</title>
-<link rel="stylesheet" type="text/css" href="theme.css">
-<style>
+    <!-- Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-</style>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="theme.css?v=20261015">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CS0F3FZ1S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-0CS0F3FZ1S');
+    </script>
 </head>
 
+
 <body>
-<div id="layout-content" style="margin-top:25px; margin-bottom:25px;">
 
-<table width="100%" border="0" align="center">
-    <tr>
-    <td width="5%"></td>
-    <td width="60%">
-        <div id="header" style="float:left">
-        <h3>Jinxin Wang (王金鑫)</h3>
-        <p> <font size="2"> Postdoc@HEC Montréal. Email: wangjinxin68@gmail.com </p>
-        <!-- <p> <font size="2"> McGiffert House, 5751 S Woodlawn Ave, Chicago, IL 60637, United States. </font></p>-->
-        <!-- <p> <em>  Email: <a href="mailto:dqcarren@gmail.com">dqcarren@gmail.com</a> </em> </p> -->
-	</P> <a href="https://drive.google.com/file/d/1Abg5ICnOChme0FGEfKmrmw7x1L40cjgD/view?usp=drive_link" target="_blank"> CV</a> - <a href="https://scholar.google.com/citations?hl=en&user=XV1ZEJQAAAAJ" target="_blank"> Google Scholar </a> - <a href="https://www.linkedin.com/in/jinxin-wang-6608a5176/" target="_blank"> LinkedIn </a>
-			<!-- <a href="https://drive.google.com/file/d/1_TprM4DUZEG0CrJ9n_r9VTXLWfWrQmy7/view?usp=drive_link" target="_blank">Research Statement</a>] </P>--!>
-	<!-- <p> <a href="https://scholar.google.com/citations?hl=en&user=XV1ZEJQAAAAJ" target="_blank"><img src="./pic/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>
-	    <a href="https://github.com/wangjinxin-terry" target="_blank"><img src="./pic/github_s.jpg" height="30px" style="margin-bottom:-3px"></a>--!>
-	</p>
+<main id="layout-content">
+
+    <!-- =====================================================
+         Header
+         ===================================================== -->
+
+    <header class="profile-header">
+
+        <div id="header" class="profile-info">
+
+            <h1>Jinxin Wang (王金鑫)</h1>
+
+            <p class="profile-meta">
+                Postdoc@HEC Montréal. Email: wangjinxin68@gmail.com
+            </p>
+
+            <div class="profile-links">
+                <a
+                    href="https://drive.google.com/file/d/1Abg5ICnOChme0FGEfKmrmw7x1L40cjgD/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >CV</a>
+
+                <a
+                    href="https://scholar.google.com/citations?hl=en&user=XV1ZEJQAAAAJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Google Scholar</a>
+
+                <a
+                    href="https://www.linkedin.com/in/jinxin-wang-6608a5176/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >LinkedIn</a>
+            </div>
+
         </div>
-    </td>
-    <td width="30%">
-        <div id="photo" style="float:right;">
-        <img src="photo.jpeg" alt="my photo" style="width:150px;height:200px;">
+
+        <div id="photo" class="profile-photo">
+            <img src="photo.jpeg" alt="Jinxin Wang">
         </div>
-    </td>
-    <td width="5%"></td>
-    </tr>
-</table>
 
-<table width = "100%" border="0" align="center">
-
-    <tr>
-    <td width="5%"></td>
-    <td width="90%">
-        <hr>
-        <div id="bio" class="contents">
-	<h3>About Me</h3>  
-		 <p> <font size="2">  I am a postdoc working with <A href="https://www.hec.ca/en/profs/erick.delage.html">Erick Delage</A> while visiting <A href="https://www.stat.uchicago.edu/~ykhoo/">Yuehaw Khoo</A> at UChicago. I am passionate about methods (e.g., optimization, optimal transport, and decision-making under uncertainty) for real-world applications. 
-			I have worked on 1. nonconvex optimization for Cryo-EM/SLAM applications, 2. GPU-friendly 1st-order algorithms for nonlinear conic optimization problems, and 3. alignment/OT from data science, biology, and generative AI.
-			<p>
-	<!-- <p> <font color="DeepSkyBlue"> <font size="2"> News: I will make an academic visit to Department of Combinatorics and Optimization, University of Waterloo, hosted by <A href="https://www.math.uwaterloo.ca/~hwolkowi/">Prof. Henry Wolkowicz</A> during 04/2023-09/2023. Looking forward to this visit! <p> --!>
-        <p> <font color="black"> <font size="2"> I received a PhD degree in Operations Research at CUHK in Dec 2024 advised by <A href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</A>. I also get advice from <A href="https://www1.se.cuhk.edu.hk/~hfxu/index.html"> Huifu Xu</A> and <A href="https://vietanhnguyen.net/"> Viet Anh Nguyen</A>.
-
-<!-- I am also a visiting student at Department of Combinatorics and Optimization, University of Waterloo, hosted by <A href="https://www.math.uwaterloo.ca/~hwolkowi/">Prof. Henry Wolkowicz</A> during 06/2023-08/2023.  --!><p>
-        <p> <font color="black"> <font size="2">   I obtained an MPhil degree in Data Science (2017-2020) from Peking University
-		supervised by <A href="https://bicmr.pku.edu.cn/~wenzw/">Zaiwen Wen</A>, and a
-		bachelor's degree in Applied Mathematics (2013-2017; Loo-Keng Hua Elite Program; minor in Finance) from Dalian University of Technology. In addition, 
-		I was an exchange student (2016-2017) under the supervision of <A href="http://lsec.cc.ac.cn/~liuxin/">Xin Liu</A> at the Academy of Mathematics and Systems Science (AMSS), the Chinese Academy of Sciences (CAS).<p>
-        </font> </p>
-        <hr></div>
-    </td>
-    <td width="5%" align="left">
-    </tr>
-	
+    </header>
 
 
-    
-    <tr>
-    <td width="5%"></td>
-    <td width="90%">
-        <div id="pub" class="contents">
-        <h3>Selected Papers </h3> <font size="2"> 
-				          <p> <font size="2"> †: Corresponding author; *: Equal contribution.</p>
-					 <p> <font size="2">
-           Distance Profile Distance Hierarchy for Gromov-Wasserstein. <br>
-            (alphabetical order) YoonHaeng Hur, <A href="https://www.stat.uchicago.edu/~ykhoo/">Yuehaw Khoo</A>, <b>Jinxin Wang</b>†. </font> <br>
-        </p>
-					 <p> <font size="2">
-           Orientation Estimation of Cryo-EM Images for Molecules with Arbitrary Symmetry by Semidefinite Programming. [<a href="https://arxiv.org/abs/2610.18691" target="_blank">arxiv</a>]<br>
-            (alphabetical order) Yunpeng Shi, <A href="https://web.math.princeton.edu/~amits/">Amit Singer</A>, <b>Jinxin Wang</b>, Ruiyi Yang. </font> <br>
-        </p>
-			
-					 <p> <font size="2">
-           Restarted Accelerated Primal-Dual Algorithms with Adaptive Stepsizes for Nonlinear Conic Constrained Convex Optimization. [<a href="https://arxiv.org/pdf/2605.29291" target="_blank">arxiv</a>] (Under review) <br>
-            (alphabetical order) <A href="https://nsaybat.org/">Necdet Serhat Aybat</A>*, <b>Jinxin Wang</b>*. </font> <br>
-        </p>
-					 <p> <font size="2">
-           TriP: A Triangle Puzzle Approach to Robust Translation Averaging. [<a href="https://arxiv.org/pdf/2605.07143" target="_blank">arxiv</a>] (Under review) <br>
-            Zhekai Fan, Wanze Li, <b>Jinxin Wang</b>, Yunpeng Shi. </font> <br>
-        </p>
-		 <p> <font size="2">
-           Schrödinger Bridge as Robustified Optimal Transport Flows. [<a href="https://openreview.net/forum?id=kMGM6IWHwu" target="_blank">Short version</a>] (Under review) <br>
-            <b>Jinxin Wang</b>, Ya-Ping Hsieh, Bahar Taskesen. </font> <br>
-			 <font size="2"> Short version at DynaFront Workshop at NeurIPS 2025.</font> <br>
-        </p>
-	 <p> <font size="2">
-           Bridging Convex and Nonconvex Approaches: Geodesic Strong Convexity of QCQPs from Tightness and Strict Complementarity of SDR. [<a href="https://drive.google.com/file/d/1HRrkjdOV8uYCFHm9rxuuyAgefC9LAsVa/view?usp=drive_link" target="_blank">Slides 2025.7</a>] <br>
-            Huikang Liu, <b>Jinxin Wang</b>†, Chonghe Jiang, Anthony Man-Cho So. </font> <br>
-        </p>
-	<p> <font size="2">
-           Randomized Submanifold Subgradient Method for Optimization over Stiefel Manifolds. [<a href="https://arxiv.org/pdf/2409.01770" target="_blank">arxiv</a>] <br>
-            Andy Yat-Ming Cheung, <b>Jinxin Wang</b>†, Man-Chung Yue, Anthony Man-Cho So. </font> 
-			 <br> <font size="2"> SIAM Journal on Optimization (SIOPT) 2026.</font> <br>
-<!-- <font color="Black"> <font size="1.9"> TL;DR. BCD for problems with nonlinear coupling constraints (e.g., Stiefel manifold constraint).</font> --!>
-        </p>
-			    <p> <font color="black"><font size="2">
-          Decentralized Weakly Convex Optimization Over the Stiefel Manifold. [<a href="https://ieeexplore.ieee.org/abstract/document/11646513" target="_blank">PDF</a>] <br>
-            <b>Jinxin Wang</b>, Jiang Hu, Shixiang Chen, Anthony Man-Cho So. </font>
- <br> <font size="2"> IEEE Transactions on Signal Processing (TSP) 2026. Short version at IEEE SAM 2024.</font> <br>
-<!-- <font color="black"> <font size="1.9"> TL;DR. A decentralized algorithm for coupled non-smooth non-convex optimization via proximal smoothness.</font> --!>
-        </p>
-			<p> <font color="black"> <font size="2">
-           Projected Tensor Power Method for Hypergraph Community Recovery. <br>
-            <b>Jinxin Wang</b>, Yuen-Man Pun, Xiaolu Wang, Peng Wang, Anthony Man-Cho So. 
-            <br>
-              Proceedings of the 40th International Conference on Machine Learning (ICML 2023).</font> <br>
-<!-- <font color="black"> <font size="1.9"> TL;DR. PTPM for a non-convex polynomial optimization problem with low-rank structure.</font> --!>
-        </p>
-				<p> <font size="2">
-           Complexity Analysis of the Regular Simplicial Search Method with Reflection and Shrinking Steps for Derivative-Free Optimization. [<a href="https://arxiv.org/abs/2508.16561" target="_blank">arxiv</a>] <br>
-            Wei Hu, <b>Jinxin Wang</b>, Liyuan Cao. </font> <br>
-        </p>
-			
-	    <p> <font color="black"> <font size="2">
-         Orthogonal Group Synchronization with Incomplete Measurements: Error Bounds and Linear Convergence of the Generalized Power Method. 
-		[<a href="https://arxiv.org/abs/2112.06556" target="_blank">arxiv</a>; <a href="https://www.youtube.com/watch?v=hnspCT3N0-Q" target="_blank">background video</a>] <br>
-            Linglingzhi Zhu, <b>Jinxin Wang</b>, Anthony Man-Cho So. </font> <br>
-<!-- <font color="black"> <font size="1.9"> TL;DR. Localization over the orthogonal group; spherical Euclidean distance matrix; low-rank structure. </font> --!>
+    <!-- =====================================================
+         About
+         ===================================================== -->
+
+    <section id="bio" class="contents section">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a postdoc working with
+            <a href="https://www.hec.ca/en/profs/erick.delage.html">Erick Delage</a>
+            while visiting
+            <a href="https://www.stat.uchicago.edu/~ykhoo/">Yuehaw Khoo</a>
+            at UChicago. I am passionate about methods (e.g., optimization,
+            optimal transport, and decision-making under uncertainty) for
+            real-world applications. I have worked on 1. nonconvex optimization
+            for Cryo-EM/SLAM applications, 2. GPU-friendly 1st-order algorithms
+            for nonlinear conic optimization problems, and 3. alignment/OT from
+            data science, biology, and generative AI.
         </p>
 
-<!--            <p><font color="black"> <font size="2">
-          Sparse High-Order Portfolios via Proximal DCA and SCA. [<a href="https://www1.se.cuhk.edu.hk/~manchoso/papers/ho_portfolio-icassp21.pdf" target="_blank">paper</a>] <br>
-            <b>Jinxin Wang</b>, Zengde Deng, Taoli Zheng, Anthony Man-Cho So. 
-            <br>
-              Proceedings of the 2021 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2021).</font> <br> --!>
-<!-- <font color="black"> <font size="1.9"> TL;DR. Proximal DCA and SCA for a non-smooth difference-of-convex optimization problem. </font> --!>
+        <p>
+            I received a PhD degree in Operations Research at CUHK in Dec 2024
+            advised by
+            <a href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</a>.
+            I also get advice from
+            <a href="https://www1.se.cuhk.edu.hk/~hfxu/index.html">Huifu Xu</a>
+            and
+            <a href="https://vietanhnguyen.net/">Viet Anh Nguyen</a>.
         </p>
 
-        <p>    <font color="black"> <font size="2">
-        <!--  Joint Bandwidth Allocation and Path Selection in WANs with Path Cardinality Constraints. [<a href="https://ieeexplore.ieee.org/document/9549120" target="_blank">paper</a>]<br>
-            <b>Jinxin Wang<b>, Fan Zhang, Zhonglin Xie, Zaiwen Wen, Gong Zhang.
-            <br>
-            Journal of Communications and Information Networks (JCIN), 2021. </font> <br>--!>
-<!-- <font color="black"> <font size="1.9"> TL;DR. Built on the classic network utility maximization, we consider a more practical problem with multiple zero-norm constraints and tackle it using ADMM.</font> --!>
-        </p>  
-			<p> <font color="black"> <font size="2">
-            Optimization: Modeling, Algorithm and Theory (in Chinese) [<a href="http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/opt2.pdf" target="_blank">Book</a>]<br>
-           I contributed to the ADMM part.
-            </font> <br>
-			<p> <font size="2">
-           Scalable and Reliable First-Order Methods for Structured Non-Convex QCQPs. [<a href="https://drive.google.com/file/d/1FWL9vyKaV6zVn4_frnKhugjgupaD3c84/view?usp=sharing" target="_blank">PhD Thesis</a>] [<a href="https://drive.google.com/file/d/1gyn6eVIqyCFy0mBWr0o3hLcNKLq1Wsau/view?usp=sharing" target="_blank">Slides</a>] 
-	 </font> <br> 
+        <p>
+            I obtained an MPhil degree in Data Science (2017-2020) from
+            Peking University supervised by
+            <a href="https://bicmr.pku.edu.cn/~wenzw/">Zaiwen Wen</a>,
+            and a bachelor's degree in Applied Mathematics
+            (2013-2017; Loo-Keng Hua Elite Program; minor in Finance)
+            from Dalian University of Technology. In addition, I was an
+            exchange student (2016-2017) under the supervision of
+            <a href="http://lsec.cc.ac.cn/~liuxin/">Xin Liu</a>
+            at the Academy of Mathematics and Systems Science (AMSS),
+            the Chinese Academy of Sciences (CAS).
         </p>
-		</p>
-        <hr></div>
-    </td>
-    <td width="5%" align="left">
+
+    </section>
 
 
-	<tr>
-	<td width="5%"></td>
-    <td width="90%">
-        <div id="react" class="contents">
-        <h3>Awards</h3>
-		<ul>
-		<li><font size="2">Canada Impact+ Research Training Award - Postdoctoral (from NSERC) 2026-2028 </font> <be>
-		<li><font size="2">CUHK Postgraduate Student Scholarship 2020-2024 </font> <be>
-		<li><font size="2">IEEE SAM Travel Grant 2024; CUHK Support of Overseas Conference Travel 2024 </font> <be>
-		<li><font size="2">CUHK Reaching Out Award 2023; CUHK RPG Student Grants for Overseas Academic Activities 2023 & 2024 </font> <br>
-		<li><font size="2">Loo-Keng Hua Scholarship 2015 </font><br>
-		</ul>
-		<p></p>
-        <hr></div>
-    </td>
-    <td width="5%"></td>
+    <!-- =====================================================
+         Selected Papers
+         ===================================================== -->
 
-	<tr>
-	<td width="5%"></td>
-    <td width="90%">
-        <div id="react" class="contents">
-        <h3>Talks and Posters</h3>
-		<ul>
-		<li><font size="2">INFORMS Annual Meeting, Nov, 2026, San Francisco </font> <be>
-		 <li><font size="2">INFORMS Optimization Society Conference, March, 2026, Atlanta </font> <be>
-		 <li><font size="2">NeurIPS, December, 2025, San Diego </font> <be>
-		<li><font size="2">INFORMS Annual Meeting, October 2025, Atlanta </font> <be>
-		<li><font size="2">International conference on continuous optimization (ICCOPT), July 2025, Los Angeles </font> <be>
-		<li><font size="2">IEEE Sensor Array and Multichannel Signal Processing Workshop (SAM), July 2024, Corvallis, Oregon </font> <be>
-		<li><font size="2">International Conference on Machine Learning (ICML), July 2023, Honolulu, Hawaii </font> <be>
-		<li><font size="2"> Graduate Forum of the Mathematical Programming Branch of ORSC, Dec 2022, virtual </font> <br>
-		<li><font size="2">First ORSHK Young Researchers Workshop, Nov 2022, Hong Kong </font> <br>
-		<li><font size="2"> IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), June 2021, virtual </font><br>
-		</ul>
-		<p></p>
-        <hr></div>
-    </td>
-    <td width="5%"></td>
+    <section id="pub" class="contents section">
+
+        <h2>Selected Papers</h2>
+
+        <p class="paper-legend">
+            †: Corresponding author; *: Equal contribution.
+        </p>
 
 
-   <tr>
-    <td width="5%"></td>
-    <td width="90%">
-        <div id="react" class="contents">
-        <h3>Professional Services</h3>
-            Reviewer for <br>
-		<ul>
-		 <li> <font size="2">SIAM Journal on Optimization, Mathematics of Operations Research, IEEE Transactions on Information Theory,
-	Journal of Global Optimization, Journal of Scientific Computing, Pacific Journal of Optimization, Operations Research Letters </font> <be>
-		<li> <font size="2"> ICLR, AISTATS, ICML (Gold reviewer of ICML 2026), NeurIPS 2025 Workshop DynaFront/COML </font> <be>
-            	</ul>
-        <hr></div>
-    </td>
-    <td width="5%"></td>
+        <article class="paper">
 
-    <tr> 
-    <td width="5%"></td>
-    <td width="90%">
-        <div id="react" class="contents">
-        <h3>Teaching Assistant</h3>
-	<!-- ENGG 5501 -->
-	<font size="2">SEEM 2440   Engineering Economics (Instructor: <A href="https://sites.google.com/view/dohyun">Dohyun Ahn</A>), 2022 Fall, 2023 Fall </font> <br>
-	<font size="2">SEEM 5880   Supply Chain Management (Instructor: <A href="https://sites.google.com/site/drsinho/">HO, Sin Cheung</A>), 2022 Spring </font> <br>
-        <font size="2">ESTR 1005   Linear Algebra for Engineers (Instructor: <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-long-zhuoyu-daniel/" target="_blank">Daniel Long</a>), 2022 Spring </font><br>
-	<font size="2">SEEM 5710   Principles of Operations Management (Instructor: <A href="https://sites.google.com/site/drsinho/">HO, Sin Cheung</A>), 2021 Fall </font> <br>
-	<font size="2">ENGG 5501   Foundations of Optimization (Instructor: <A href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</A>), 2021 Fall, 2022 Fall </font> <br>
-	<font size="2">SEEM 3500   Quality Control and Management (Instructor: <a href="https://www1.se.cuhk.edu.hk/~hfxu/" target="_blank">Huifu Xu</a>), 2021 Spring </font> <br>
-        <font size="2">ENGG 2760D  Probability for Engineers (Instructor: <a href="https://www1.se.cuhk.edu.hk/~hfxu/" target="_blank">Huifu Xu</a>, NG Chi Kong Kevin), 2020 Fall, 2023 Fall </font> <br>
-        <hr></div>
-    </td>
-    <td width="5%"></td>  
-	    
-<!--
-    <tr>
-    <td width="5%"></td>
-    <td width="90">
-	    <div id="react" class="contents">
-	    <h3>Useful links</h3>
-	    <font size="2">
-	 Philosophy: <A href="https://www.dbertsim.mit.edu/"> Philosophy of Prof. Dimitris Bertsimas</A> <br>
-	Career advice: <A href="https://faculty.mccombs.utexas.edu/rui.gao/students.html"> Prof. Rui Gao</A> <br>
-	Writing: <A href="https://www.cs.ubc.ca/~schmidtm/Courses/Notes/writing.pdf">Some notes on writing</A>; 
-	    <A href="https://drive.google.com/file/d/1Uyck01C0leQtpllhLoew2HfusaaLJk9K/view?usp=sharing">How to write scientific papers</A> <br>
-	 Presentation: <A href="https://people.eng.unimelb.edu.au/jmanton/ResRes.html">Giving good presentations</A>; 
-		<A href="http://faculty.bicmr.pku.edu.cn/~wenzw/bigdata/sto20200510.pdf">Thinking</A>; 
-		<A href="https://sites.google.com/view/yifan-hu/useful-links"> Academic presentation</A> <br>
-	 Others: <A href="https://terrytao.wordpress.com/">Tao blog </A>
-		
-	</font>	<br>
-	
-        <hr></div>
-    </td>
-    <td width="5%"></td>   
-	--!> 
-		
-    <tr>
-    <td width="5%"></td>
-    <td width="90">
-	    
-        <div>
-		<p> <font size="2"> 君子之交淡如水 ---《庄子·山木》 </p>
+            <div class="paper-main">
+                <span class="paper-title">
+                    Distance Profile Distance Hierarchy for Gromov-Wasserstein.
+                </span>
+            </div>
+
+            <div class="paper-authors">
+                (alphabetical order) YoonHaeng Hur,
+                <a href="https://www.stat.uchicago.edu/~ykhoo/">Yuehaw Khoo</a>,
+                <strong>Jinxin Wang</strong>†.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Orientation Estimation of Cryo-EM Images for Molecules with
+                    Arbitrary Symmetry by Semidefinite Programming.
+                </span>
+                [<a
+                    href="https://arxiv.org/abs/2610.18691"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>]
+            </div>
+
+            <div class="paper-authors">
+                (alphabetical order) Yunpeng Shi,
+                <a href="https://web.math.princeton.edu/~amits/">Amit Singer</a>,
+                <strong>Jinxin Wang</strong>, Ruiyi Yang.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Restarted Accelerated Primal-Dual Algorithms with Adaptive
+                    Stepsizes for Nonlinear Conic Constrained Convex Optimization.
+                </span>
+                [<a
+                    href="https://arxiv.org/pdf/2605.29291"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>]
+                <span class="paper-status">(Under review)</span>
+            </div>
+
+            <div class="paper-authors">
+                (alphabetical order)
+                <a href="https://nsaybat.org/">Necdet Serhat Aybat</a>*,
+                <strong>Jinxin Wang</strong>*.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    TriP: A Triangle Puzzle Approach to Robust Translation Averaging.
+                </span>
+                [<a
+                    href="https://arxiv.org/pdf/2605.07143"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>]
+                <span class="paper-status">(Under review)</span>
+            </div>
+
+            <div class="paper-authors">
+                Zhekai Fan, Wanze Li, <strong>Jinxin Wang</strong>, Yunpeng Shi.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Schrödinger Bridge as Robustified Optimal Transport Flows.
+                </span>
+                [<a
+                    href="https://openreview.net/forum?id=kMGM6IWHwu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Short version</a>]
+                <span class="paper-status">(Under review)</span>
+            </div>
+
+            <div class="paper-authors">
+                <strong>Jinxin Wang</strong>, Ya-Ping Hsieh, Bahar Taskesen.
+            </div>
+
+            <div class="paper-note">
+                Short version at DynaFront Workshop at NeurIPS 2025.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Bridging Convex and Nonconvex Approaches: Geodesic Strong
+                    Convexity of QCQPs from Tightness and Strict Complementarity
+                    of SDR.
+                </span>
+                [<a
+                    href="https://drive.google.com/file/d/1HRrkjdOV8uYCFHm9rxuuyAgefC9LAsVa/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Slides 2025.7</a>]
+            </div>
+
+            <div class="paper-authors">
+                Huikang Liu, <strong>Jinxin Wang</strong>†,
+                Chonghe Jiang, Anthony Man-Cho So.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Randomized Submanifold Subgradient Method for Optimization
+                    over Stiefel Manifolds.
+                </span>
+                [<a
+                    href="https://arxiv.org/pdf/2409.01770"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>]
+            </div>
+
+            <div class="paper-authors">
+                Andy Yat-Ming Cheung, <strong>Jinxin Wang</strong>†,
+                Man-Chung Yue, Anthony Man-Cho So.
+            </div>
+
+            <div class="paper-note">
+                SIAM Journal on Optimization (SIOPT) 2026.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Decentralized Weakly Convex Optimization Over the Stiefel Manifold.
+                </span>
+                [<a
+                    href="https://ieeexplore.ieee.org/abstract/document/11646513"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >PDF</a>]
+            </div>
+
+            <div class="paper-authors">
+                <strong>Jinxin Wang</strong>, Jiang Hu, Shixiang Chen,
+                Anthony Man-Cho So.
+            </div>
+
+            <div class="paper-note">
+                IEEE Transactions on Signal Processing (TSP) 2026.
+                Short version at IEEE SAM 2024.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Projected Tensor Power Method for Hypergraph Community Recovery.
+                </span>
+            </div>
+
+            <div class="paper-authors">
+                <strong>Jinxin Wang</strong>, Yuen-Man Pun, Xiaolu Wang,
+                Peng Wang, Anthony Man-Cho So.
+            </div>
+
+            <div class="paper-note">
+                Proceedings of the 40th International Conference on Machine Learning
+                (ICML 2023).
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Complexity Analysis of the Regular Simplicial Search Method
+                    with Reflection and Shrinking Steps for Derivative-Free Optimization.
+                </span>
+                [<a
+                    href="https://arxiv.org/abs/2508.16561"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>]
+            </div>
+
+            <div class="paper-authors">
+                Wei Hu, <strong>Jinxin Wang</strong>, Liyuan Cao.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Orthogonal Group Synchronization with Incomplete Measurements:
+                    Error Bounds and Linear Convergence of the Generalized Power Method.
+                </span>
+                [<a
+                    href="https://arxiv.org/abs/2112.06556"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >arxiv</a>;
+                <a
+                    href="https://www.youtube.com/watch?v=hnspCT3N0-Q"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >background video</a>]
+            </div>
+
+            <div class="paper-authors">
+                Linglingzhi Zhu, <strong>Jinxin Wang</strong>, Anthony Man-Cho So.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Optimization: Modeling, Algorithm and Theory (in Chinese)
+                </span>
+                [<a
+                    href="http://faculty.bicmr.pku.edu.cn/~wenzw/optbook/opt2.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Book</a>]
+            </div>
+
+            <div class="paper-authors">
+                I contributed to the ADMM part.
+            </div>
+
+        </article>
+
+
+        <article class="paper">
+
+            <div class="paper-main">
+                <span class="paper-title">
+                    Scalable and Reliable First-Order Methods for Structured
+                    Non-Convex QCQPs.
+                </span>
+                [<a
+                    href="https://drive.google.com/file/d/1FWL9vyKaV6zVn4_frnKhugjgupaD3c84/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >PhD Thesis</a>]
+                [<a
+                    href="https://drive.google.com/file/d/1gyn6eVIqyCFy0mBWr0o3hLcNKLq1Wsau/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Slides</a>]
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         Awards
+         ===================================================== -->
+
+    <section class="contents section">
+
+        <h2>Awards</h2>
+
+        <ul>
+            <li>
+                Canada Impact+ Research Training Award - Postdoctoral
+                (from NSERC) 2026-2028
+            </li>
+
+            <li>
+                CUHK Postgraduate Student Scholarship 2020-2024
+            </li>
+
+            <li>
+                IEEE SAM Travel Grant 2024; CUHK Support of Overseas
+                Conference Travel 2024
+            </li>
+
+            <li>
+                CUHK Reaching Out Award 2023; CUHK RPG Student Grants
+                for Overseas Academic Activities 2023 &amp; 2024
+            </li>
+
+            <li>
+                Loo-Keng Hua Scholarship 2015
+            </li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         Talks and Posters
+         ===================================================== -->
+
+    <section class="contents section">
+
+        <h2>Talks and Posters</h2>
+
+        <ul>
+            <li>INFORMS Annual Meeting, Nov, 2026, San Francisco</li>
+            <li>INFORMS Optimization Society Conference, March, 2026, Atlanta</li>
+            <li>NeurIPS, December, 2025, San Diego</li>
+            <li>INFORMS Annual Meeting, October 2025, Atlanta</li>
+            <li>International conference on continuous optimization (ICCOPT), July 2025, Los Angeles</li>
+            <li>IEEE Sensor Array and Multichannel Signal Processing Workshop (SAM), July 2024, Corvallis, Oregon</li>
+            <li>International Conference on Machine Learning (ICML), July 2023, Honolulu, Hawaii</li>
+            <li>Graduate Forum of the Mathematical Programming Branch of ORSC, Dec 2022, virtual</li>
+            <li>First ORSHK Young Researchers Workshop, Nov 2022, Hong Kong</li>
+            <li>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), June 2021, virtual</li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         Professional Services
+         ===================================================== -->
+
+    <section class="contents section">
+
+        <h2>Professional Services</h2>
+
+        <p class="service-intro">Reviewer for</p>
+
+        <ul>
+            <li>
+                SIAM Journal on Optimization, Mathematics of Operations Research,
+                IEEE Transactions on Information Theory, Journal of Global Optimization,
+                Journal of Scientific Computing, Pacific Journal of Optimization,
+                Operations Research Letters
+            </li>
+
+            <li>
+                ICLR, AISTATS, ICML (Gold reviewer of ICML 2026),
+                NeurIPS 2025 Workshop DynaFront/COML
+            </li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         Teaching Assistant
+         ===================================================== -->
+
+    <section class="contents section">
+
+        <h2>Teaching Assistant</h2>
+
+        <div class="teaching-list">
+
+            <div class="teaching-item">
+                SEEM 2440&nbsp;&nbsp; Engineering Economics
+                (Instructor:
+                <a href="https://sites.google.com/view/dohyun">Dohyun Ahn</a>),
+                2022 Fall, 2023 Fall
+            </div>
+
+            <div class="teaching-item">
+                SEEM 5880&nbsp;&nbsp; Supply Chain Management
+                (Instructor:
+                <a href="https://sites.google.com/site/drsinho/">HO, Sin Cheung</a>),
+                2022 Spring
+            </div>
+
+            <div class="teaching-item">
+                ESTR 1005&nbsp;&nbsp; Linear Algebra for Engineers
+                (Instructor:
+                <a
+                    href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-long-zhuoyu-daniel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Daniel Long</a>),
+                2022 Spring
+            </div>
+
+            <div class="teaching-item">
+                SEEM 5710&nbsp;&nbsp; Principles of Operations Management
+                (Instructor:
+                <a href="https://sites.google.com/site/drsinho/">HO, Sin Cheung</a>),
+                2021 Fall
+            </div>
+
+            <div class="teaching-item">
+                ENGG 5501&nbsp;&nbsp; Foundations of Optimization
+                (Instructor:
+                <a href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</a>),
+                2021 Fall, 2022 Fall
+            </div>
+
+            <div class="teaching-item">
+                SEEM 3500&nbsp;&nbsp; Quality Control and Management
+                (Instructor:
+                <a
+                    href="https://www1.se.cuhk.edu.hk/~hfxu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Huifu Xu</a>),
+                2021 Spring
+            </div>
+
+            <div class="teaching-item">
+                ENGG 2760D&nbsp;&nbsp; Probability for Engineers
+                (Instructor:
+                <a
+                    href="https://www1.se.cuhk.edu.hk/~hfxu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Huifu Xu</a>,
+                NG Chi Kong Kevin),
+                2020 Fall, 2023 Fall
+            </div>
+
         </div>
-    </td>
-    <td width="5%"></td>
-    </tr>
+
+    </section>
 
 
+    <!-- =====================================================
+         Footer quote
+         ===================================================== -->
+
+    <footer class="footer">
+        <p>君子之交淡如水 ---《庄子·山木》</p>
+    </footer>
+
+</main>
+
+</body>
+</html>

@@ -33,14 +33,14 @@ p {
     font-size: 22px;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #0050e7
+    color: #4B77A5;
 }
 
-a:hover{
-    color: #0404B4;
-    border-bottom: 1px gray dotted;
+a:hover {
+    color: #315A7D;
+    border-bottom: 1px #315A7D dotted;
 }
 
 .contents {align: left;}
